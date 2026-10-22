@@ -5,8 +5,9 @@ Repository: `Maazwary786/Hospital-Readmission-Pipeline-Databricks`
 ## Team
 
 - `Maazwary786` — repository owner and maintainer.
-- `Hitesh0825` — invited collaborator; accept the GitHub invitation before pushing.
+- `Hitesh0825` — collaborator with write access to the repository.
 
+Hitesh can access the repository after signing in to GitHub with the invited account.
 Each contributor should create and push their own feature branch. Commits must be made
 from that contributor's own GitHub account so GitHub can accurately show who did the work.
 Do not commit or push using another teammate's account.
@@ -18,7 +19,8 @@ author their own commits after accepting the collaborator invitation.
 
 ## Branch and pull-request workflow
 
-1. Accept the invitation to the repository. Start with the latest integration branch:
+1. Sign in to GitHub with your own account, open the repository, and start with the latest
+   integration branch:
 
    ```powershell
    git switch develop

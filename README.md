@@ -4,6 +4,17 @@
 
 ---
 
+## 👥 Team & Collaboration
+
+- [Maazwary786](https://github.com/Maazwary786) — repository owner and maintainer.
+- [Hitesh0825](https://github.com/Hitesh0825) — project collaborator with **write access**
+  to this repository and the `team/hitesh0825` starter branch.
+
+Work is tracked through individual GitHub accounts, feature branches, and pull requests
+into `develop`; this ensures GitHub attributes commits to the person who authored them.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the team workflow. Repository access can
+be viewed by the owner on the [GitHub collaborators settings page](https://github.com/Maazwary786/Hospital-Readmission-Pipeline-Databricks/settings/access).
+
 ## 🎯 Executive Overview & Problem Statement
 A hospital network stores Electronic Health Records (EHR) in MySQL, lab reports as files, and bed-side device vitals as streams. Care teams lack real-time ICU deterioration alerts and 30-day readmission risk visibility.
 

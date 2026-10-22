@@ -1,0 +1,23 @@
+# Databricks Asset Bundle (DAB) Configuration
+# Problem Statement #05: Healthcare Patient Vitals Lakehouse Pipeline
+
+bundle:
+  name: Hospital-Readmission-Pipeline-Databricks-main
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-b25423e5-6fae.cloud.databricks.com
+
+resources:
+  jobs:
+    healthcare_vitals_pipeline_job:
+      name: "Healthcare_Vitals_Readmission_Pipeline"
+      tasks:
+        - task_key: "run_master_lakehouse_pipeline"
+          notebook_task:
+            notebook_path: "./databricks/Healthcare_Patient_Vitals_Master.py"
+            source: "WORKSPACE"
+# Healthcare_Patient_Vitals_Master in the project folder

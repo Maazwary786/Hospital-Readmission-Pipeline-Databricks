@@ -1,0 +1,59 @@
+{
+  "offset": 120,
+  "patient_state": {
+    "8a6616e16126020b": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "a7f9b96b9bc4bfe8": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "718a3c0bd42fb9ce": {
+      "streak": 2,
+      "first_low_time": "2026-10-20 20:13:45",
+      "readings": [
+        84.8,
+        85.4
+      ]
+    },
+    "c21069d80b58ebd9": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "fa1d8328e016bdca": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "12586f15394869f9": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "f8043ef0c01c994b": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "c11ee34d570add67": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "29af6e08dfebf5f1": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    },
+    "9c1834fdcc2d3052": {
+      "streak": 0,
+      "first_low_time": null,
+      "readings": []
+    }
+  },
+  "timestamp": "2026-10-22T09:23:02.975350"
+}

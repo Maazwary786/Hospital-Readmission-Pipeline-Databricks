@@ -1,0 +1,54 @@
+[
+  {
+    "guideline_id": "CLIN-GL-01",
+    "topic": "Acute Hypoxemia & Deterioration Protocol",
+    "keywords": [
+      "spo2",
+      "hypoxia",
+      "deterioration",
+      "oxygen",
+      "icu",
+      "saturation"
+    ],
+    "content": "Guideline CLIN-GL-01 (Acute Bedside Hypoxemia Management):\n1. Clinical Threshold: Sustained SpO2 < 90% for >= 3 consecutive minutes represents acute physiological deterioration.\n2. Operational SLA: bedside alert latency must be < 10 seconds to notify nursing staff.\n3. Immediate Action: Initiate supplemental O2 via nasal cannula (2-4 L/min) or Venturi mask; verify sensor placement and pulse amplitude.\n4. Escalation: ICU escalation response time must occur within < 3 minutes if SpO2 fails to recover > 92%."
+  },
+  {
+    "guideline_id": "CLIN-GL-02",
+    "topic": "30-Day Hospital Readmission Reduction (CMS / ClearPath Protocol)",
+    "keywords": [
+      "readmission",
+      "30-day",
+      "discharge",
+      "penalty",
+      "prior",
+      "utilization"
+    ],
+    "content": "Guideline CLIN-GL-02 (Post-Discharge Readmission Mitigation):\n1. High-Risk Indicators: Patients with >= 2 prior inpatient admissions within 12 months exhibit 3x higher readmission risk (26% vs 8% baseline).\n2. Chronic Conditions: Circulatory failure (Heart Failure, AMI) and complex Diabetes carry the highest 30-day readmission vulnerability.\n3. Transition of Care: Mandatory clinical touchpoint within 48 hours of discharge and reconciliation of outpatient medications reduces readmissions by 15%."
+  },
+  {
+    "guideline_id": "CLIN-GL-03",
+    "topic": "HIPAA Data Governance & PHI De-identification",
+    "keywords": [
+      "hipaa",
+      "privacy",
+      "phi",
+      "masking",
+      "sha-256",
+      "anonymization",
+      "audit"
+    ],
+    "content": "Guideline CLIN-GL-03 (HIPAA Compliance & Safe Harbor Anonymization):\n1. Identification Masking: All Direct identifiers (Name, SSN, MRN) must be masked with SHA-256 cryptographic hashing.\n2. Role-Based Access: Restricted analytics roles must only query 100% masked views in Databricks Unity Catalog.\n3. Auditability: Delta Lake Time Travel audit logs must be maintained to verify tamper-proof data lineage."
+  },
+  {
+    "guideline_id": "CLIN-GL-04",
+    "topic": "Tachycardia & Hemodynamic Instability Protocol",
+    "keywords": [
+      "heart rate",
+      "tachycardia",
+      "blood pressure",
+      "shock",
+      "vital signs"
+    ],
+    "content": "Guideline CLIN-GL-04 (Hemodynamic Deterioration):\n1. Tachycardia Criteria: Sustained Heart Rate > 120 bpm at rest accompanied by mean arterial pressure (MAP) drop < 65 mmHg.\n2. Escalation: Rapid response team evaluation, serum lactate measurement, and bedside 12-lead ECG."
+  }
+]

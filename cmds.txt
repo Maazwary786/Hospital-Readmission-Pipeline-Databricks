@@ -1,0 +1,72 @@
+HOSPITAL READMISSION - LIVE AIRFLOW + SPARK PRESENTATION
+=========================================================
+
+EASIEST WAY: DOUBLE-CLICK present-demo.cmd
+-------------------------------------------
+This opens a color-highlighted terminal, starts/checks Kafka, the dashboard, Airflow,
+and Spark, resets and verifies the local Airflow login, unpauses the project DAG, and
+opens the browser pages including the Airflow DAG Grid and Spark master/worker UIs.
+
+Airflow login:
+  URL:      http://localhost:8080
+  Username: admin
+  Password: copy the one-time password printed in the presentation terminal
+
+Airflow: open healthcare_patient_vitals_master_dag. Use Graph/Grid to present its
+successful tasks, or click Trigger DAG to run it again.
+
+SPARK DEMO
+----------
+After present-demo.cmd finishes, open spark-demo.cmd in a second terminal. It submits a
+real Spark aggregation over 1,200 project admissions. The job stays visible for 3 minutes:
+  Master UI:      http://localhost:8081
+  Worker UI:      http://localhost:8082
+  Application UI: http://localhost:4040 (open/refresh while spark-demo.cmd is running)
+
+The Spark terminal prints the CSV schema, number of admissions, and counts by diagnosis.
+Open/refresh http://localhost:4040 while the job runs. Run spark-demo.cmd again to rerun.
+
+KAFKA TERMINAL DEMO (OPTIONAL)
+-------------------------------
+present-demo.cmd starts Kafka and checks that the broker is ready. To show messages,
+open another PowerShell terminal and start a consumer:
+  docker exec -it kafka /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic vitals_stream --from-beginning
+
+Open one more terminal and start a producer:
+  docker exec -it kafka /opt/kafka/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic vitals_stream
+
+Type this message and press Enter; it should appear in the consumer terminal:
+  {"patient_hash":"demo-patient-001","spo2":88,"heart_rate":120,"bed_id":"ICU-DEMO"}
+
+Press Ctrl+C in the producer/consumer terminal to stop that command.
+
+Dashboard: http://localhost:5000
+Kafka broker: localhost:9092
+
+POWERSHELL METHOD (INSTEAD OF DOUBLE-CLICKING)
+-----------------------------------------------
+Open PowerShell in the project folder:
+  Set-Location "<path-to-this-project>"
+  .\present-demo.cmd
+
+Open a second PowerShell window, go to the project folder, and run:
+  .\spark-demo.cmd
+
+STOP SERVICES WHEN FINISHED
+---------------------------
+  docker compose down
+
+This stops Airflow and Spark without deleting Airflow metadata. It leaves the separate
+Kafka and dashboard containers alone.
+
+LOGIN TROUBLESHOOTING
+---------------------
+The presentation launcher resets the local Airflow admin password to the one printed
+above every time it runs, and verifies the password against Airflow before opening the UI.
+It generates a new one-time password every run. If the login fails, run
+.\present-demo.cmd again and copy the newly printed password:
+  Username: admin
+  Password: printed by the launcher; it changes every run
+
+The Airflow and Spark web UIs are bound to this computer's localhost. The demo password
+is only for this local presentation; do not expose the Airflow port to a public network.

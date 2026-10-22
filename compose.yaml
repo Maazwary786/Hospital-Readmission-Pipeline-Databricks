@@ -1,0 +1,57 @@
+services:
+  airflow:
+    image: apache/airflow:2.10.5-python3.11
+    command: airflow standalone
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/project/airflow/dags
+      PYTHONPATH: /opt/project
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - airflow-data:/opt/airflow
+      - ./airflow:/opt/project/airflow:ro
+      - ./lakehouse:/opt/project/lakehouse:ro
+      - ./streaming:/opt/project/streaming:ro
+      - ./models:/opt/project/models
+      - ./data:/opt/project/data
+    restart: unless-stopped
+
+  spark-master:
+    image: apache/spark:3.5.7
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.master.Master
+      - --host
+      - spark-master
+      - --port
+      - "7077"
+      - --webui-port
+      - "8081"
+    ports:
+      - "127.0.0.1:7077:7077"
+      - "127.0.0.1:8081:8081"
+      - "127.0.0.1:4040:4040"
+    volumes:
+      - ./data:/opt/project/data:ro
+      - ./spark_demo.py:/opt/project/spark_demo.py:ro
+    restart: unless-stopped
+
+  spark-worker:
+    image: apache/spark:3.5.7
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://spark-master:7077
+      - --webui-port
+      - "8082"
+    depends_on:
+      - spark-master
+    ports:
+      - "127.0.0.1:8082:8082"
+    volumes:
+      - ./data:/opt/project/data:ro
+    restart: unless-stopped
+
+volumes:
+  airflow-data:

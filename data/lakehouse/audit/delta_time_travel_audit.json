@@ -1,0 +1,23 @@
+[
+  {
+    "version": 0,
+    "timestamp": "2025-01-10T08:00:00Z",
+    "action": "INITIAL_INGESTION",
+    "rows": 1200,
+    "hipaa_status": "RAW_LANDING"
+  },
+  {
+    "version": 1,
+    "timestamp": "2025-01-10T08:15:00Z",
+    "action": "COLUMN_MASKING_CLEANSING",
+    "rows": 1200,
+    "hipaa_status": "100%_MASKED_VERIFIED"
+  },
+  {
+    "version": 2,
+    "timestamp": "2025-01-10T08:30:00Z",
+    "action": "STAR_SCHEMA_PARTITIONING",
+    "rows": 1200,
+    "hipaa_status": "GOLD_CERTIFIED"
+  }
+]

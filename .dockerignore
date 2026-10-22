@@ -1,0 +1,9 @@
+.git/
+.vscode/
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+.env
+**/.env
+*.pbix

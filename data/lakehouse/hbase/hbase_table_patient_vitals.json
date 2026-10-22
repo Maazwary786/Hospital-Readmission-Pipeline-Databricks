@@ -1,0 +1,197 @@
+{
+  "8a6616e16126020b": {
+    "vitals": {
+      "bed_id": "ICU-BED-01",
+      "spo2": 94.3,
+      "heart_rate": 66,
+      "blood_pressure": "112/91",
+      "openaq_pm25": 20.8,
+      "event_time": "2026-10-22 09:53:08",
+      "last_updated": "2026-10-22T09:53:08.098116"
+    },
+    "alerts": {}
+  },
+  "a7f9b96b9bc4bfe8": {
+    "vitals": {
+      "bed_id": "ICU-BED-02",
+      "spo2": 98.7,
+      "heart_rate": 87,
+      "blood_pressure": "131/73",
+      "openaq_pm25": 22.6,
+      "event_time": "2026-10-22 09:53:09",
+      "last_updated": "2026-10-22T09:53:09.099510"
+    },
+    "alerts": {}
+  },
+  "718a3c0bd42fb9ce": {
+    "vitals": {
+      "bed_id": "ICU-BED-03",
+      "spo2": 87.8,
+      "heart_rate": 131,
+      "blood_pressure": "124/79",
+      "openaq_pm25": 32.8,
+      "event_time": "2026-10-22 09:53:00",
+      "last_updated": "2026-10-22T09:53:00.083901"
+    },
+    "alerts": {
+      "alert_type": "SPO2_DETERIORATION",
+      "severity": "CRITICAL",
+      "details": {
+        "alert_id": "ALERT_718a3c0b_1792642980083",
+        "patient_hash": "718a3c0bd42fb9ce",
+        "bed_id": "ICU-BED-03",
+        "icu_unit": "Surgical ICU",
+        "alert_name": "CRITICAL_ICU_DETERIORATION",
+        "metric": "SpO2 < 90% for 3 consecutive minutes",
+        "duration_seconds": 180,
+        "current_spo2": 87.8,
+        "mean_spo2": 85.8,
+        "heart_rate": 131,
+        "alert_latency_seconds": 1.25,
+        "sla_status": "SLA_MET (<10s)",
+        "action_required": "Immediate Nurse Intervention & Respiratory Escalation",
+        "timestamp": "2026-10-22 09:53:00"
+      },
+      "triggered_at": "2026-10-22T09:53:00.083901",
+      "status": "ACTIVE_ESCALATION"
+    }
+  },
+  "c21069d80b58ebd9": {
+    "vitals": {
+      "bed_id": "ICU-BED-04",
+      "spo2": 95.6,
+      "heart_rate": 80,
+      "blood_pressure": "133/85",
+      "openaq_pm25": 15.3,
+      "event_time": "2026-10-22 09:53:01",
+      "last_updated": "2026-10-22T09:53:01.087269"
+    },
+    "alerts": {}
+  },
+  "fa1d8328e016bdca": {
+    "vitals": {
+      "bed_id": "ICU-BED-05",
+      "spo2": 99.2,
+      "heart_rate": 65,
+      "blood_pressure": "115/86",
+      "openaq_pm25": 15.0,
+      "event_time": "2026-10-22 09:53:02",
+      "last_updated": "2026-10-22T09:53:02.089160"
+    },
+    "alerts": {}
+  },
+  "12586f15394869f9": {
+    "vitals": {
+      "bed_id": "ICU-BED-06",
+      "spo2": 98.6,
+      "heart_rate": 86,
+      "blood_pressure": "123/68",
+      "openaq_pm25": 36.8,
+      "event_time": "2026-10-22 09:53:03",
+      "last_updated": "2026-10-22T09:53:03.090897"
+    },
+    "alerts": {}
+  },
+  "f8043ef0c01c994b": {
+    "vitals": {
+      "bed_id": "ICU-BED-07",
+      "spo2": 87.3,
+      "heart_rate": 117,
+      "blood_pressure": "125/79",
+      "openaq_pm25": 21.3,
+      "event_time": "2026-10-22 09:53:04",
+      "last_updated": "2026-10-22T09:53:04.092528"
+    },
+    "alerts": {
+      "alert_type": "SPO2_DETERIORATION",
+      "severity": "CRITICAL",
+      "details": {
+        "alert_id": "ALERT_f8043ef0_1792642984092",
+        "patient_hash": "f8043ef0c01c994b",
+        "bed_id": "ICU-BED-07",
+        "icu_unit": "Medical ICU",
+        "alert_name": "CRITICAL_ICU_DETERIORATION",
+        "metric": "SpO2 < 90% for 3 consecutive minutes",
+        "duration_seconds": 80,
+        "current_spo2": 87.3,
+        "mean_spo2": 87.5,
+        "heart_rate": 117,
+        "alert_latency_seconds": 1.25,
+        "sla_status": "SLA_MET (<10s)",
+        "action_required": "Immediate Nurse Intervention & Respiratory Escalation",
+        "timestamp": "2026-10-22 09:53:04"
+      },
+      "triggered_at": "2026-10-22T09:53:04.092528",
+      "status": "ACTIVE_ESCALATION"
+    }
+  },
+  "c11ee34d570add67": {
+    "vitals": {
+      "bed_id": "ICU-BED-08",
+      "spo2": 95.8,
+      "heart_rate": 67,
+      "blood_pressure": "145/70",
+      "openaq_pm25": 23.1,
+      "event_time": "2026-10-22 09:53:05",
+      "last_updated": "2026-10-22T09:53:05.094009"
+    },
+    "alerts": {}
+  },
+  "29af6e08dfebf5f1": {
+    "vitals": {
+      "bed_id": "ICU-BED-09",
+      "spo2": 96.4,
+      "heart_rate": 91,
+      "blood_pressure": "112/83",
+      "openaq_pm25": 32.3,
+      "event_time": "2026-10-22 09:53:06",
+      "last_updated": "2026-10-22T09:53:06.095526"
+    },
+    "alerts": {}
+  },
+  "9c1834fdcc2d3052": {
+    "vitals": {
+      "bed_id": "ICU-BED-10",
+      "spo2": 97.0,
+      "heart_rate": 83,
+      "blood_pressure": "106/89",
+      "openaq_pm25": 14.2,
+      "event_time": "2026-10-22 09:53:07",
+      "last_updated": "2026-10-22T09:53:07.096548"
+    },
+    "alerts": {}
+  },
+  "a4f89d31c0e27b89": {
+    "vitals": {
+      "bed_id": "ICU-BED-03",
+      "spo2": 85.5,
+      "heart_rate": 132,
+      "blood_pressure": "142/90",
+      "openaq_pm25": 14.2,
+      "event_time": "2026-10-21 19:24:15",
+      "last_updated": "2026-10-21T19:24:15.435116"
+    },
+    "alerts": {
+      "alert_type": "SPO2_DETERIORATION",
+      "severity": "CRITICAL",
+      "details": {
+        "alert_id": "ALERT_a4f89d31_1792590855435",
+        "patient_hash": "a4f89d31c0e27b89",
+        "bed_id": "ICU-BED-03",
+        "icu_unit": "Surgical ICU",
+        "alert_name": "CRITICAL_ICU_DETERIORATION",
+        "metric": "SpO2 < 90% for 3 consecutive minutes",
+        "duration_seconds": 60,
+        "current_spo2": 85.5,
+        "mean_spo2": 85.5,
+        "heart_rate": 132,
+        "alert_latency_seconds": 1.25,
+        "sla_status": "SLA_MET (<10s)",
+        "action_required": "Immediate Nurse Intervention & Respiratory Escalation",
+        "timestamp": "2026-10-21 19:24:15"
+      },
+      "triggered_at": "2026-10-21T19:24:15.435116",
+      "status": "ACTIVE_ESCALATION"
+    }
+  }
+}

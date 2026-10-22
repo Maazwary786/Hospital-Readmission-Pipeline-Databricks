@@ -1,0 +1,9 @@
+diagnosis_code,diagnosis_group,description,base_risk
+I21.9,Circulatory,Acute myocardial infarction,0.28
+I50.9,Circulatory,"Heart failure, unspecified",0.25
+J44.9,Respiratory,Chronic obstructive pulmonary disease,0.22
+J18.9,Respiratory,"Pneumonia, unspecified organism",0.2
+E11.9,Diabetes,Type 2 diabetes mellitus,0.18
+K52.9,Digestive,Noninfective gastroenteritis,0.14
+S06.0,Injury,Concussion / Trauma,0.19
+M54.5,Musculoskeletal,Low back pain,0.11

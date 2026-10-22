@@ -1,0 +1,26 @@
+doctor_id,doctor_name,specialty,department
+DOC_001,Dr. Specialist_1,Cardiology,ICU
+DOC_002,Dr. Specialist_2,Critical Care,Step-Down
+DOC_003,Dr. Specialist_3,Cardiology,Emergency
+DOC_004,Dr. Specialist_4,Internal Medicine,ICU
+DOC_005,Dr. Specialist_5,Internal Medicine,Emergency
+DOC_006,Dr. Specialist_6,Cardiology,Step-Down
+DOC_007,Dr. Specialist_7,Cardiology,General Ward
+DOC_008,Dr. Specialist_8,Pulmonology,Step-Down
+DOC_009,Dr. Specialist_9,Internal Medicine,General Ward
+DOC_010,Dr. Specialist_10,Pulmonology,ICU
+DOC_011,Dr. Specialist_11,Pulmonology,General Ward
+DOC_012,Dr. Specialist_12,Pulmonology,Step-Down
+DOC_013,Dr. Specialist_13,Internal Medicine,Emergency
+DOC_014,Dr. Specialist_14,Endocrinology,ICU
+DOC_015,Dr. Specialist_15,Internal Medicine,Step-Down
+DOC_016,Dr. Specialist_16,Internal Medicine,General Ward
+DOC_017,Dr. Specialist_17,Pulmonology,Step-Down
+DOC_018,Dr. Specialist_18,Critical Care,ICU
+DOC_019,Dr. Specialist_19,Endocrinology,Step-Down
+DOC_020,Dr. Specialist_20,Critical Care,General Ward
+DOC_021,Dr. Specialist_21,Internal Medicine,General Ward
+DOC_022,Dr. Specialist_22,Pulmonology,General Ward
+DOC_023,Dr. Specialist_23,Critical Care,Emergency
+DOC_024,Dr. Specialist_24,Critical Care,ICU
+DOC_025,Dr. Specialist_25,Critical Care,General Ward

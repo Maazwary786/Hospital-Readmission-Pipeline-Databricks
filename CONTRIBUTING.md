@@ -11,9 +11,14 @@ Each contributor should create and push their own feature branch. Commits must b
 from that contributor's own GitHub account so GitHub can accurately show who did the work.
 Do not commit or push using another teammate's account.
 
+The repository includes `team/maazwary786` and `team/hitesh0825` starter branches for
+navigation and collaboration. They begin at the shared project baseline; a branch name
+alone is not evidence that its named contributor made a code change. Each person should
+author their own commits after accepting the collaborator invitation.
+
 ## Branch and pull-request workflow
 
-1. Start with the latest integration branch:
+1. Accept the invitation to the repository. Start with the latest integration branch:
 
    ```powershell
    git switch develop
